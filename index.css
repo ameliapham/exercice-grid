@@ -3,7 +3,7 @@ body {
     padding: 0;
 }
 
-body > * {
+body>* {
     border: 1px solid red;
 }
 
@@ -14,4 +14,10 @@ body {
     min-height: 100vh;
     display: grid;
     grid-template-rows: auto auto 1fr auto;
+}
+
+@media (min-width: 40em) {
+    body {
+        grid-template-columns: 20em 1fr;
+    }
 }
