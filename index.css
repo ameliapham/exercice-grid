@@ -7,7 +7,23 @@ body>* {
     border: 1px solid red;
 }
 
+#accept-cookie {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 400px;
+    background-color: pink;
+    height: 200px;
+    
+}
 
+#main-header-sticky {
+    position: sticky;
+    background-color: lightblue;
+    top:0;
+    height: 50px;
+
+} 
 
 /*==========Start exercice==========*/
 body {
@@ -17,11 +33,12 @@ body {
 }
 
 @media (min-width: 40em) {
+    /*
     body {
         grid-template-columns: 10em 1fr;
         grid-template-rows: auto 1fr auto;
-
     }
+    
 
     header {
         grid-column: span 2;
@@ -30,4 +47,5 @@ body {
     footer {
         grid-column: span 2;
     }
+    */
 }
