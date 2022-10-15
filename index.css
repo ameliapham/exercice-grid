@@ -13,28 +13,29 @@ body>* {
 body {
     min-height: 100vh;
     display: grid;
+    grid-template-columns: 10em 1fr;
     grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+        'header header' 
+        'nav body' 
+        'nav footer';
 }
 
-body section {
-    display: none;
+header { 
+    grid-area: header;
 }
 
-@media (min-width: 40em) {
+section {
+    grid-area: nav;
+    
+}
 
-    body {
-        grid-template-rows: auto 1fr auto;
-        grid-template-columns: 10em 1fr;
-    }
+main {
+    grid-area: body;
+}
 
-    body section {
-        display: unset;
-    }
-
-    header, footer {
-        grid-column: span 2;
-    }
-
+footer {
+    grid-area: footer;
 }
 
 
